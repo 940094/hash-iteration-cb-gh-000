@@ -8,7 +8,7 @@
 
 def select_winner(passengers)
   passengers.each do |suite, name| # iterate over passengers hashe
-    if suite == :suite_a
+    if suite == :suite_a && name.start_with?("A")
       puts name # if key is equite to "suite_a" and first letter of first name is "A"
     end
   end
